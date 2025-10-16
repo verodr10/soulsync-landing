@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SoulSync — Join Waitlist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:#0f172a;
+      background:#fafafa;
+      min-height:100vh;
+      display:flex; align-items:center; justify-content:center;
+      padding:24px;
+    }
+    .card{
+      max-width:560px; width:100%;
+      background:#fff; border:1px solid #EBD4FF;
+      border-radius:16px; padding:24px 20px; box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+    }
+    h1{margin:0 0 12px 0; font-size:28px}
+    p{margin:0 0 16px 0; color:#334155}
+    label{font-size:14px; display:block; margin-bottom:8px}
+    input[type=email]{width:100%; padding:12px 14px; border-radius:12px; border:1px solid #d4b7ff; outline:none}
+    button{
+      margin-top:14px; width:100%; padding:12px 16px; border-radius:999px;
+      background:#B388EB; color:#fff; font-weight:600; border:none; cursor:pointer
+    }
+    .note{margin-top:10px; font-size:12px; color:#64748b}
+    .ok{display:none; margin-top:12px; color:#16a34a; font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Join the SoulSync Waitlist</h1>
+    <p>Be the first to try SoulSync before launch. We’ll email you when early access opens.</p>
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="you@example.com">
+    <button id="submit">Join Waitlist</button>
+    <div class="ok" id="ok">You're on the list — thank you! 💜</div>
+    <p class="note">We’ll only use your email to notify you about SoulSync’s early access.</p>
+  </div>
+  <script>
+    // Placeholder — on Vercel, replace with your Google Sheets/MailerLite endpoint.
+    document.getElementById('submit').addEventListener('click', async () => {
+      const email = document.getElementById('email').value.trim();
+      if(!email || !email.includes('@')) { alert('Please enter a valid email'); return; }
+      // Simulate success
+      document.getElementById('ok').style.display = 'block';
+      // TODO: Replace with fetch('YOUR_ENDPOINT', { method:'POST', body: JSON.stringify({ email }) })
+    });
+  </script>
+</body>
+</html>

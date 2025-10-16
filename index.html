@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SoulSync — Feel. Breathe. Reflect.</title>
+  <meta name="description" content="A mindful space to track your emotions, breathe with intention, and reconnect with yourself.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --lavender:#B388EB;
+      --aqua:#90E0EF;
+      --white: #ffffff;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:#fff;
+      background: linear-gradient(135deg, var(--lavender) 0%, var(--aqua) 100%);
+      min-height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+    }
+    .container{padding:48px 24px; max-width:820px; width:100%}
+    h1{font-size:56px; line-height:1.05; margin:0 0 16px 0; letter-spacing:-0.02em}
+    p.lead{font-size:20px; opacity:0.92; margin:0 auto 32px auto; max-width:640px}
+    .bullets{display:grid; gap:8px; margin:0 auto 36px auto; color:rgba(255,255,255,0.85); font-size:15px}
+    .cta{
+      display:inline-block;
+      background:rgba(255,255,255,0.2);
+      border:1px solid rgba(255,255,255,0.4);
+      backdrop-filter:saturate(160%) blur(6px);
+      padding:14px 28px;
+      border-radius:999px;
+      font-weight:600;
+      text-decoration:none;
+      color:#fff;
+      transition:transform .15s ease, background .2s ease;
+    }
+    .cta:hover{transform:translateY(-1px); background:rgba(255,255,255,0.28)}
+    footer{margin-top:28px; font-size:12px; color:rgba(255,255,255,0.65)}
+    .logo{
+      display:inline-block;
+      font-weight:700;
+      font-size:18px;
+      letter-spacing:0.06em;
+      padding:8px 12px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,0.4);
+      background: rgba(255,255,255,0.12);
+      margin-bottom:16px;
+    }
+    @media (min-width: 640px){
+      .bullets{grid-template-columns:repeat(2, minmax(0,1fr)); max-width:560px}
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="logo">SOULSYNC</div>
+    <h1>SoulSync</h1>
+    <p class="lead">A mindful space to track your emotions, breathe with intention, and reconnect with yourself.</p>
+    <div class="bullets">
+      <div>🌸 Record your mood in seconds</div>
+      <div>🌬️ Practice guided breathing</div>
+      <div>📓 Write reflections that help you grow</div>
+      <div>📊 Discover emotional insights over time</div>
+    </div>
+    <a class="cta" href="./waitlist.html">Join Waitlist →</a>
+    <footer>© 2025 SoulSync. Feel. Breathe. Reflect.</footer>
+  </main>
+</body>
+</html>
